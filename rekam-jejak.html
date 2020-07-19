@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfN6cL8h93gOrEvp0shcvtOgwTrHRHeN8&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+    <script src="google-api/app.js"></script>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 80%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 30;
+  padding: 30;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Peta Kuliner di Tasikmalaya</h1>
+    <div id="map"></div>
+    <table id="myTable">
+      <tr><th>Nama Resto</th><th>Alamat</th><th>No Tlp</th></tr>
+      <tr>
+        <td>nama</td><td>alama</td><td>tlg</td>
+      </tr>
+      <tr>
+        <td>nama</td><td>alama</td><td>tlg</td>
+      </tr>
+      <tr>
+        <td>nama</td><td>alama</td><td>tlg</td>
+      </tr>
+    </table>
+  </body>
+  <script type="text/javascript">
+    $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+  </script>
+
+
+</html>
