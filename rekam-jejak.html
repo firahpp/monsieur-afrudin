@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Rekam Jejak - Monsieur Afrudin</title>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfN6cL8h93gOrEvp0shcvtOgwTrHRHeN8&callback=initMap&libraries=&v=weekly"
@@ -30,20 +34,64 @@ body {
     </style>
   </head>
   <body>
-    <h1>Peta Kuliner di Tasikmalaya</h1>
+    <nav class="header">
+        <div class="container">
+             <p class="logo">
+                 Monsieur Afrudin
+             </p>
+             <ul class="navigation">
+                <li>
+                    <a href="rekam-jejak.html">Rekam Jejak</a>
+                </li> 
+                <li>
+                     <a href="contact.html">Contact</a>
+                 </li>
+                 <li>
+                     <a href="artikel.html">Article</a>
+                 </li>
+                 <li>
+                     <a href="tempat.html">Event</a>
+                 </li>
+                 <li>
+                     <a href="galeri.html">Gallery</a>
+                 </li>
+                 <li>
+                     <a href="index.html">About</a>
+                 </li>
+                 <li>
+                     <a href="portfolio.html">Portfolio</a>
+                 </li>
+                 <li>
+                     <a href="about.html">Home</a>
+                 </li>
+                 
+             </ul>
+         </div>
+     </nav>
+<br>
+    <h1>Lokasi Pameran di Jerman</h1>
     <div id="map"></div>
     <table id="myTable">
-      <tr><th>Nama Resto</th><th>Alamat</th><th>No Tlp</th></tr>
-      <tr>
-        <td>nama</td><td>alama</td><td>tlg</td>
-      </tr>
-      <tr>
-        <td>nama</td><td>alama</td><td>tlg</td>
-      </tr>
-      <tr>
-        <td>nama</td><td>alama</td><td>tlg</td>
-      </tr>
-    </table>
+          <tr><th>Nama Tempat</th><th>Alamat</th><th>No Tlp</th></tr>
+          <tr>
+            <td>Universitas Jena</td><td>Fürstengraben 1, 07743 Jena, Jerman</td><td>+49364194000</td>
+          </tr>
+          <tr>
+            <td>Stadtverwaltung Gera</td><td>Kornmarkt 12, 07545 Gera, Jerman</td><td>+493658380</td>
+          </tr>
+          <tr>
+            <td>Kleintierpraxis Lohse/Feige</td><td>Ronneburger Str. 74, 07546 Gera, Jerman</td><td>+4936555176036</td>
+          </tr>
+          <tr>
+            <td>Bürgergalerie Neumünster e.V.</td><td>Ronneburger Str. 74, 07546 Gera, Jerman</td><td>-</td>
+          </tr>
+          <tr>
+            <td>Geraer Volkshochschule Aenne Biermann</td><td>Talstraße 3, 07545 Gera, Jerman</td><td>+4936555259301</td>
+          </tr>
+          <tr>
+            <td>Thuringian Parliamente</td><td>Jürgen-Fuchs-Straße 1, 99096 Erfurt, Jerman</td><td>+493613772200</td>
+          </tr>
+        </table>
   </body>
   <script type="text/javascript">
     $(document).ready( function () {
