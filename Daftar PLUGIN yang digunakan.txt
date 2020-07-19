@@ -1,0 +1,8 @@
+Plugin yang digunakan untuk website ini adalah :
+1. Responsive testimonial (Home)
+2. Data Tables (Portfolio)
+3. Floating Sidebar Social Media (About)
+4. Gallery Slider (Gallery)
+5. Carousel/Slider (Event)
+
+Form (Contact)

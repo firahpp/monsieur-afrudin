@@ -1,0 +1,147 @@
+/* install fonts*/
+@font-face{
+    font-family: merienda;
+    src: url('../font/MeriendaOne-Regular.ttf');
+}
+@font-face{
+    font-family: lato;
+    src: url('../font/Lato/Lato-Regular.ttf');
+}
+@font-face{
+    font-family: comfortaa;
+    src: url('../font/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
+@font-face{
+    font-family: caveat;
+    src: url('../font/Caveat/Caveat-Regular.ttf');
+}
+
+
+body{
+    margin: 0;
+   
+}
+
+.container{
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.header{
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to bottom,rgb(32, 9, 88),rgb(8, 59, 84));
+    
+}
+
+.header .logo {
+    font-size: 32px;
+    float: left;
+    color: rgb(230, 200, 31);
+    font-family: merienda;s
+}
+
+.header .navigation {
+    float: right;
+    margin-top : 40px;
+    font-family : comfortaa;
+
+}
+
+.header .navigation li {
+    float: right;
+    margin-left: 20px;
+    font-size: 18px;
+    display: block
+
+}
+
+.header .navigation li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header .navigation li a:hover {
+    color: rgb(18, 235, 83);
+    text-decoration: underline;
+}
+.judul{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.tentang{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.testimonial{
+    font-size: 18px;
+    float: left;
+    margin-left: 8px;
+}
+
+.parent {
+    margin-top: 20px;
+
+}
+
+.ikon{
+    width: 250px;
+    height: 250px;
+    background-image: url('../images/ayah.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    float: right;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+
+/*login*/
+.login{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.form-login{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.user{
+    font-size: 20px;
+    color: green;
+}
+.pass{
+    font-size: 20px;
+    color: green;
+}
+
+.button {
+    font-size: 18px;
+}
+
+.content-gambar p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    
+}
+
+.border-gambar, .th-gambar, {
+    
+    text-align: center;
+}
+  
+td {
+    padding: 10px;
+}
+  
+.artikel{
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: lato;
+}

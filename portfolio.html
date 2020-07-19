@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+    <title>Portfolio - Monsieur Afrudin</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfN6cL8h93gOrEvp0shcvtOgwTrHRHeN8&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"> 
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 80%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 30;
+  padding: 30;
+}
+    </style>
+</head>
+<body>  
+    <nav class="header">
+        <div class="container">
+             <p class="logo">
+                 Monsieur Afrudin
+             </p>
+             <ul class="navigation">
+                 <li>
+                     <a href="contact.html">Contact</a>
+                 </li>
+                 <li>
+                     <a href="artikel.html">Article</a>
+                 </li>
+                 <li>
+                     <a href="tempat.html">Event</a>
+                 </li>
+                 <li>
+                     <a href="galeri.html">Gallery</a>
+                 </li>
+                 <li>
+                     <a href="about.html">About</a>
+                 </li>
+                 <li>
+                     <a href="portfolio.html">Portfolio</a>
+                 </li>
+                 <li>
+                     <a href="index.html">Home</a>
+                 </li>
+                 
+             </ul>
+         </div>
+     </nav>
+
+    <section>
+        <h2 align="center">PENGALAMAN PAMERAN</h2>
+        <h3 align="center">Dalam Negeri</h3>
+        <table id='myTable' class="display compact" style="width:70%"">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tahun</th>
+                    <th>Tempat</th>
+                </tr>
+            </thead> 
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>1985</td>
+                    <td>Dalam rangka Dwi Windu SMIK di Tasikmalaya</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>1986</td>
+                    <td>Pameran Bersama Kelompok 9 di Gedung UPP Tasikmalaya</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>1987</td>
+                    <td>Dalam Rangka Dies Natalis ke IX Universitas Siliwangi Tasikmalaya</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>2009</td>
+                    <td>Pameran Seni Rupa “Naratas Jalan di Mayasari Plaza”, Tasikmalaya,<br>
+                        Pameran Fotografi di Tasikmalaya, <br>
+                        Pameran Seni Lukis “Membaca Langit Menyentuh Bumi” di Asia Plaza Tasikmalaya, <br>
+                        Pameran Seni Rupa Bertiga di Namira Hotel Gallery Tasikmalaya</td>      
+                </tr>      
+                <tr>
+                    <td>05</td>
+                    <td>2010</td>
+                    <td>Pameran Seni Rupa ber-6 di Namira Hotel Gallery Tasikmalaya</td>
+                </tr>    
+                <tr>
+                    <td>06</td>
+                    <td>2011</td>
+                    <td>Pameran Lukisan Realis bersama Kelompok Pelukis Pinggiran di Tasikmalaya,<br>
+                        Pameran Lukisan “Nuansa Ramadhan” Galeri Matahari Tasikmalaya,<br>
+                        Pameran Seni Lukis “Panorama Tasikmalaya” bersama Kelompok Pelukis Pinggiran.</td>
+                </tr>     
+                <tr>
+                    <td>07</td>
+                    <td>2012</td>
+                    <td>Pameran Karikatur “Ngaguar Rasa” bersama Kelompok Lelanang Jagad</td>
+                </tr>  
+                <tr>
+                    <td>08</td>
+                    <td>2012</td>
+                    <td>Pameran Fotografi, <br>
+                        Pameran Seni Rupa “Refleksi Ruang dan Waktu” bersama kelompok SILPA di Mayasari Paza Tasikmalaya,<br>
+                        Pameran Lukisan Bersama Kelompok Pelukis Pinggiran Jilid 3,<br>
+                        Pameran Seni Rupa “HUMANIORA Collaboration Visual Art Theater Exibhition” at Terasseni Art Space Gallery UBUD-BALI</td>
+
+                </tr>  
+                <tr>
+                    <td>09</td>
+                    <td>2013</td>
+                    <td>Pameran Seni Rupa “Hijau Leatari” di Gallery Matahari,<br>
+                        Pameran Seni Rupa “Konstelasi Hijau” di GaleriKita Bandung,<br>
+                        Pameran Seni Rupa dalam Rangka “HARDIKNAS”di Kampus UPI Bandung,<br>
+                        Pameran Lukisan “Ngatik Seni Ngariksa Budaya” di Galery Matahari, <br>
+                        Pameran Seni Rupa Akhir Tahun bersama KSRT di Gedung Kesenian Tasikmalaya</td>
+                </tr>    
+                <tr>
+                    <td>10</td>
+                    <td>2014</td>
+                    <td>Pameran Melukis Model bersama Pelukis Jerman Hans Joerg Waskowski di Galeri Matahari,<br>
+                        Pameran Bersama Hans Joerg Waskowski di Joglo Mangkubumi,<br>
+                        Pameran Seni Rupa “Lingkungan Hidup” di Green Area Mangkubumi Tasikmalaya,<br>
+                        Pameran Seni Rupa “Silaturahmi Kota” di Hotel mangkubumi</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>2015</td>
+                    <td>Pameran Lukisan “Jambore V” di Surabaya,<br>
+                        Pameran Lukisan di Rumah Makan Arumsari,<br>
+                        Pameran Seni Rupa di Mayasari Plaza Tasikmalaya bersama Silpa,<br>
+                        Pameran Lukisan di Pendopo Garut,<br>
+                        Pameran Lukisan Reunion di Gedung Kesenian Tasikmalaya,<br>
+                        Pameran Lukisan Potret Kehidupan bersama Hans-Joerg Waskowski di galeri Matahari Tasikmalaya,<br>
+                        Pameran Lukisan Semangat Proklamasi di Asia Plaza,<br>
+                        Pameran Seni Rupa “Merespon Ruang” di Gedung Kesenian Tasikmalaya,<br>
+                        Pameran Seni Rupa Tasmufes (Tasik muharam Festival).</td>
+                </tr>   
+                <tr>
+                    <td>12</td>
+                    <td>2016</td>
+                    <td>Pameran Lukisan “Seni Meungkeutkeun Silaturahmi” Tasikmalaya,<br>
+                        Pameran Bersama  Faber-Castell di Lippo Mall Jakarta,<br>
+                        Pameran “Eksplorasi Media” di Hotel Mangkubumi Tasikmalaya,<br>
+                        Pameran ULTAH SMA N 1 ke 60 di Tasikmalaya,<br>
+                        Pameran Lukisan di Diamon Square Garut,<br>
+                        Pameran Seni Rupa “ARTASIK #2”di Gedung Kesenian Tasikmalaya,<br>
+                        Pameran Lukisan “Menolak Punah” Jogja Nasional Museum,<br>
+                        Pameran Lukisan  “Artefak Laut Kidul”  di Gedung Kesenian PAPURI Saung Sunda Bandung,<br>
+                        Pamera Lukisan akhir tahun "Sungging Adilinuwih 2" di Mojokerto Ja-Tim  </td>
+                </tr>               
+                <tr>
+                    <td>13</td>
+                    <td>2017</td>
+                    <td>Pameran Seni Rupa "Jalinan Rona Pesona Estetika 8" di Taman budaya Jogjakarta,<br>
+                        "Tumbuh kembang Anak" di Rumah Sakit Hj. Kamini Tasikmalaya,<br>
+                        "Artasik #3" di Gedung Kesenian Tasik,<br>
+                        "Sungging Adilinuwih 3" Mojokerto Jawa Timur.</td>
+                </tr>    
+                <tr>
+                    <td>14</td>
+                    <td>2018</td>
+                    <td>Pameran bersama Yayasan Al Muttaqin,<br>
+                        Pameran KJR di Guangxie-China,<br>
+                        Pameran Seni Rupa  Edu Art di Taman Budaya Yogyakarta,<br>
+                        Artasik# 4</td>
+                </tr>   
+                <tr>
+                    <td>15</td>
+                    <td>2019</td>
+                    <td>Pameran Wisata bersama GBSRI di Papandayan Camping Ground,<br>
+                        Pameran bersama Ngaguar Rasa di hotel Mangkubumi,<br>
+                        Pameran Wisata jilid 1 di Papandayan Camping Ground Garut,<br>
+                        Edu Art X Taman Budaya Yogyakarta,<br>
+                        Eksplorasi Media 2 di Hotel Mangkubumi Tasikmalaya,<br>
+                        Artasik#5 di Cafe Nyalse Tasikmalaya,<br>
+                        Pameran Bergilir se Jawa Barat di Galeri Pusat Kebudayaan Bandung</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <script>
+            $(document).ready( function () {
+            $('#myTable').DataTable();
+            } );
+        </script>
+    </section>
+    <br>
+    <section>
+        <h2 align="center">PENGALAMAN PAMERAN</h2>
+        <h3 align="center">Luar Negeri</h3>
+        <table id='myTable-dua' class="display compact" style="width:70%"">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tahun</th>
+                    <th>Tempat</th>
+                </tr>
+            </thead> 
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>2015</td>
+                    <td>Together Exhibition with Community “Aenne Biermann Gera-Germany”</td>
+                </tr>
+                <tr>
+                   <td>02</td>
+                   <td>2015</td>
+                   <td><b>Solo</b> Exhibition at Foyer der Stadtverwaltung Gera-Germany</td>
+               </tr>
+               <tr>
+                   <td>03</td>
+                   <td>2016</td>
+                   <td><b>Solo</b> Exhibition at Klinik Dokter Lohse, Dr. Feige (Tierarztklinik Lohse) Germany</td>
+               </tr>
+               <tr>
+                   <td>04</td>
+                   <td>2016</td>
+                   <td>”Indonesische Farbwelten” with Asosiasi Gera di Bürgergalerie – Germany</td>
+               </tr>
+               <tr>
+                   <td>05</td>
+                   <td>2016</td>
+                   <td><b>Solo</b> Exhibition at Thuringian Parliament – Germany</td>
+               </tr>
+               <tr>
+                   <td>06</td>
+                   <td>2016</td>
+                   <td><b>Solo</b> Exhibition at University of Jena Germany</td>
+               </tr>
+               <tr>
+                   <td>07</td>
+                   <td>2017</td>
+                   <td><b>Solo</b> Exhibition "Java in Bildern" at Vet Clinik Dr. Lohse - Germany</td>
+               </tr>
+               <tr>
+                   <td>08</td>
+                   <td>2018</td>
+                   <td>"Festival Budaya Indonesia" at KJRI Guangxie - China</td>
+               </tr>
+               <tr>
+                   <td>09</td>
+                   <td>2018</td>
+                   <td>"Exhibition art in Gera Community at Geraer Volkshochschule "Aenne Biermann" Gera-Germany</td>
+               </tr>
+               <tr>
+                   <td>10</td>
+                   <td>2018</td>
+                   <td> "Together Exhibition with Mr. Hans Jörg Waskowski at St. Gangloff-Germany       </td>
+               </tr>
+           </tbody>
+           <script>
+            $(document).ready( function () {
+            $('#myTable-dua').DataTable();
+            } );
+        </script>
+    </section>
+
+</body>
+</html>
